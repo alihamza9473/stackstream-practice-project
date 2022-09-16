@@ -1,15 +1,16 @@
 // project import
+import { BrowserRouter as Router } from "react-router-dom";
+import history from "utils/history";
 import Routes from "routes";
 import ThemeCustomization from "themes";
-import ScrollTop from "components/ScrollTop";
 
 // ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
 
 const App = () => (
   <ThemeCustomization>
-    <ScrollTop>
+    <Router history={history}>
       <Routes />
-    </ScrollTop>
+    </Router>
   </ThemeCustomization>
 );
 
